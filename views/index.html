@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h3>Pages</h3>
+  <hr>
+  <ul class="list-unstyled">
+    {% for page in pageArr %}
+    <li> <a href = '/wiki/{{page.urlTitle}}'>{{page.urlTitle}}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
