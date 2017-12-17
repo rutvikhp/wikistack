@@ -15,7 +15,7 @@ router.post('/', function(req, res, next) {
       email: req.body.author_email,
       name: req.body.author_name
     }
-  }).spread((foundUser,created) => {
+  }).spread((foundUser, created) => {
       let page = Page.build({
         title: req.body.title,
         content: req.body.page_content,
