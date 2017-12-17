@@ -6,7 +6,7 @@ let User = models.User;
 
 router.get('/', function(req, res, next) {
   let user = User.findAll().then((users)=>{
-    res.render('users',{users:users});
+    res.render('users', {users:users});
   });
 });
 

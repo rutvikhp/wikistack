@@ -22,7 +22,7 @@ router.post('/', function(req, res, next) {
         status: req.body.page_status,
         authorId: foundUser.id
       });
-      page.save().then((p) => {
+      page.save().then(( p ) => {
         res.redirect('/wiki/'+p.urlTitle);
       });
   });

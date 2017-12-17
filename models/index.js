@@ -32,7 +32,7 @@ let Page = db.define('PAGE', {
   hooks: {
     beforeValidate: (page) => {
         if (page.title) {
-          // Removes all non-alphanumeric characters from title
+          // Removes all non-alphanumeric character from title
           // And make whitespace underscore
           page.urlTitle =  page.title.replace(/\s+/g, '_').replace(/\W/g, '');
         } else {

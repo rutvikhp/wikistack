@@ -8,7 +8,7 @@ let User = models.User;
 
 router.get('/', (req,res,next)=>{
   Page.findAll().then((pageArr) => {
-    res.render('index',{pageArr:pageArr});
+    res.render('index', {pageArr:pageArr});
   });
 });
 router.use('/wiki', wikiRouter);

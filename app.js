@@ -10,7 +10,7 @@ let models = require('./models/index');
 let routes = require('./routes/index')
 
 
-// have res.render work with html files
+// have res.render work with html file
 let env = nunjucks.configure('views', {noCache: true});
 app.set('view engine', 'html');
 // when res.render works with html files, have it use nunjucks to do so
